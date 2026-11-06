@@ -1,0 +1,11 @@
+a = int(input("Introdueix el primer numero: "))
+b = int(input("Introdueix el segon numero: "))
+c = int(input("Introdueix el tercer numero: "))
+
+
+if a > b and a > c:
+ print("El primer numero es el mes gran")
+elif b >a and b > c:
+    print("El segon numero es el mes gran")
+else:
+    print("El tercer numero es el mes gran")
