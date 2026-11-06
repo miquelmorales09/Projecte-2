@@ -1,0 +1,6 @@
+num = int(input("Introdueix un nombre: "))
+
+if num >= 0:
+    print("És positiu")
+else:
+    print("És negatiu")
