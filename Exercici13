@@ -1,0 +1,18 @@
+# Exercici 2. Funcions amb condicions
+def aplicar_descompte(preu, tipus_client):
+    # Accepto qualsevol combinació de majúscules/minúscules
+    # (per exemple "Empresa", "EMPRESA" o "empresa") convertint-ho a minúscules
+    tipus = tipus_client.lower()
+
+    if tipus == "particular":
+        descompte = 0
+    elif tipus == "empresa":
+        descompte = 10
+    elif tipus == "client habitual":
+        descompte = 15
+    else:
+        print("Error: tipus de client no vàlid")
+        return preu
+
+    preu_final = preu - (preu * descompte / 100)
+    return preu_final
