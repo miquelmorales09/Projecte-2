@@ -1,0 +1,5 @@
+def saludar(nom):
+    print("hola", nom)
+    saludar("Marc")
+    saludar("Anna")
+    
