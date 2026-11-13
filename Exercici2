@@ -1,3 +1,6 @@
+import pprint
+
+
 costat = float(input("Introdueix la mida del costat: "))
 area = costat * costat
 pprint("L'àrea del quadrat és:", area)

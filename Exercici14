@@ -1,0 +1,15 @@
+# Exercici 3. Funcions que criden altres funcions
+from Exercici13 import aplicar_descompte
+
+
+def calcular_iva(preu):
+    # Retorna només l'import de l'IVA (21 %), no el preu amb IVA inclòs
+    return preu * 0.21
+
+def calcular_factura(preu, tipus_client):
+    # Primer apliquem el descompte reutilitzant la funció de l'exercici 2
+    preu_descompte = aplicar_descompte(preu, tipus_client)
+    # Després calculem l'IVA sobre el preu ja descomptat
+    iva = calcular_iva(preu_descompte)
+    # El total és el preu amb descompte més l'IVA
+    return preu_descompte + iva
