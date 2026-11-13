@@ -1,0 +1,5 @@
+def calcular_preu(quantitat, preu_unitari):
+    return quantitat * preu_unitari
+
+preu = calcular_preu(45, 30)
+print(preu)
